@@ -64,7 +64,7 @@ Which `id` value had the most number of hospitalizations (regardless of diagnosi
 **ID value 5d6faee3 had the most number of hospitalizations with 118.**
 
 
-### Question (2 pts)
+### Question 2 (2 pts)
 
 Use the `inner_join()` function to answer the following question: How many hospitalizations did Males have in this dataset (for any diagnosis)?
 
@@ -75,7 +75,7 @@ Use the `inner_join()` function to answer the following question: How many hospi
 
 **Males in this dataset had a total of 9,410 hospitalizations.**
 
-### Question (2 pts)
+### Question 3 (2 pts)
 
 How many hospitalizations did people less than the age of 10 have in this dataset (for any diagnosis)?
 
@@ -87,7 +87,7 @@ How many hospitalizations did people less than the age of 10 have in this datase
 **People aged less than 10 had 10,405 hospitalizations.**
 
 
-### Question (2 pts)
+### Question 4 (2 pts)
 
 What is the average level of pollution exposure for people aged less than 6 in this dataset?
 
@@ -99,7 +99,7 @@ What is the average level of pollution exposure for people aged less than 6 in t
 **The average level of exposure for people aged less than 6 in this dataset is 9.5.**
 
 
-### Question (2 pts)
+### Question 5 (2 pts)
 
 Using the `healthcare` object, group the rows by the `id` variable, count the total number of hospitalizations for each ID, and store this data frame in a new object called `grouphealth`. The first 10 rows of the `grouphealth` data frame should look something like the following, where there is a single row for each ID and the `n` column indicates the number of hospitalizations:
 
@@ -130,7 +130,7 @@ Which ID has the 5th highest number of hospitalizations?
 
 **ID 8a76dd92 has the 5th highest number of hospitalizations.**
 
-### Question (2 pts)
+### Question 6 (2 pts)
 
 Left join the `people` data frame with the `grouphealth` data frame to create a new data frame called `peoplehealth`. The first 10 rows of the `peoplehealth` data frame should look as follows:
 
@@ -161,7 +161,7 @@ In the `peoplehealth` data frame, how many people have an `NA` value for the `n`
 **There are 25,898 people who have an `NA` value for the `n` column.**
 
 
-### Question (2 pts)
+### Question 7 (2 pts)
 
 
 The `NA` values in the `n` column of the `peoplehealth` data frame represent people who never went to the hospital. The `NA` values were created when we merged the `people` and `grouphealth` data frames together. We can replace these `NA` values with 0s using a combination of `mutate()` and the `replace_na()` function. (Look at `?replace_na for more details.)
@@ -188,7 +188,7 @@ How would you characterize the relationship between these two variables in this 
 
 
 
-### Question (2 pts)
+### Question 8 (2 pts)
 
 Use the `alldata` object to compute the average hospitalizations for each county and the average pollution for each county. Using these county averages, make a scatterplot between the county average hospitalizations (y-axis) and the county average pollution (x-axis). Make sure to put appropriate x-axis and y-axis labels.
 
@@ -204,7 +204,7 @@ How would you characterize the relationship between pollution and hospitalizatio
 
 
 
-### Question (2 pts)
+### Question 9 (2 pts)
 
 How many people (IDs) never had any hospitalizations? In other words, how many IDs in the `people` table do NOT appear in the `healthcare` table?
 
